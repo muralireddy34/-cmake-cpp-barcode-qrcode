@@ -89,7 +89,7 @@ if(WINDOWS)
     add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD 
     COMMAND ${CMAKE_COMMAND} -E copy_directory
     "${PROJECT_SOURCE_DIR}/platforms/win/bin/"      
-    $<TARGET_FILE_DIR:BarcodeReader>)
+    $<TARGET_FILE_DIR:BarcodeReader.cxx>)
 endif()
 
 # Set installation directory
